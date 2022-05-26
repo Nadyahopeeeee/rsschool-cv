@@ -30,15 +30,31 @@
     list-style: none;
   }
 
-  .nav-link {
+  .nav-item {
     padding: 0 20px;
     line-height: 50px;
   }
 
-/*Плавная прокрутка при скроле*/
-    html {
+  .nav-link {
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #ffffff;
+  }
+  
+  html {
     scroll-behavior: smooth; 
-      }
+  }
+
+  .header {
+    background-color: #829985;
+  }
+
+  .section-list {
+      list-style: none;;
+  }
 
   .section-item a {
     color: #829985;
@@ -47,7 +63,7 @@
   }
 
   .section-item a:hover {
-    color:blueviolet;;
+    color: brown;;
   }
 
   .main-container {
@@ -73,17 +89,93 @@
     color: #829985;
   }
 
+  .section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #d7d1c9;
+  }
+  
+  .section-profile-logo {
+      width: 150px;
+      object-fit: cover;
+      border-radius: 10%;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+      filter: grayscale(0.2) brightness(1.05);
+      transition: .3s;
+  }
+
+  .section-profile-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .section-profile-title .main-title {
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      color: #829985;
+      font-size: 50px;
+  }
+
   a {
     text-decoration: none;
     color: #829985;
     transition: color 0.5s;
   }
   
- a:hover {
+  a:hover {
     color: #5d7260;
   }
 
+  .section-item {
+    position: relative;
+    padding-left: 30px;
+    text-decoration: none;;
+  }
   
+  .section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #829985;
+    border-radius: 50%;
+  }
+
+  .rss {
+    width: 121px;
+    height: 45px;
+    background-image: url("./assets/svg/rs_school_js.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .footer {
+    background-color: #829985;
+    padding: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+  }
+
+  .footer-link {
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #ffffff;
+  }
 
 /*
 body {
